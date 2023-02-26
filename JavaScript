@@ -1,0 +1,27 @@
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+SyntaxError: /tmp/python-converter/fy9o93fxwlel9nggk/Hello.js: 'import' and 'export' may only appear at the top level. (15:4)
+
+  13 | }
+  14 | try {
+> 15 |     import {Image, ImageTk} from 'PIL';
+     |     ^
+  16 | } catch(e) {
+  17 |     if ((e instanceof ImportError)) {
+  18 |         if (("main" in pip)) {
+    at Parser._raise (/usr/local/nvm/versions/node/v14.0.0/lib/node_modules/@babel/core/node_modules/@babel/parser/lib/index.js:476:17)
+    at Parser.raiseWithData (/usr/local/nvm/versions/node/v14.0.0/lib/node_modules/@babel/core/node_modules/@babel/parser/lib/index.js:469:17)
+    at Parser.raise (/usr/local/nvm/versions/node/v14.0.0/lib/node_modules/@babel/core/node_modules/@babel/parser/lib/index.js:430:17)
+    at Parser.parseStatementContent (/usr/local/nvm/versions/node/v14.0.0/lib/node_modules/@babel/core/node_modules/@babel/parser/lib/index.js:14214:18)
+    at Parser.parseStatement (/usr/local/nvm/versions/node/v14.0.0/lib/node_modules/@babel/core/node_modules/@babel/parser/lib/index.js:14113:17)
+    at Parser.parseBlockOrModuleBlockBody (/usr/local/nvm/versions/node/v14.0.0/lib/node_modules/@babel/core/node_modules/@babel/parser/lib/index.js:14739:25)
+    at Parser.parseBlockBody (/usr/local/nvm/versions/node/v14.0.0/lib/node_modules/@babel/core/node_modules/@babel/parser/lib/index.js:14730:10)
+    at Parser.parseBlock (/usr/local/nvm/versions/node/v14.0.0/lib/node_modules/@babel/core/node_modules/@babel/parser/lib/index.js:14714:10)
+    at Parser.parseTryStatement (/usr/local/nvm/versions/node/v14.0.0/lib/node_modules/@babel/core/node_modules/@babel/parser/lib/index.js:14596:23)
+    at Parser.parseStatementContent (/usr/local/nvm/versions/node/v14.0.0/lib/node_modules/@babel/core/node_modules/@babel/parser/lib/index.js:14176:21) {
+  loc: Position { line: 15, column: 4, index: 487 },
+  pos: 487,
+  code: 'BABEL_PARSE_ERROR',
+  reasonCode: 'UnexpectedImportExport'
+}
